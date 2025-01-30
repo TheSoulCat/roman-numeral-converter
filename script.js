@@ -35,16 +35,6 @@ const checkUserInput = () => {
 };
 
 
-  // Listening for button click or keydown to check user input
-convertBtn.addEventListener("click", checkUserInput);
- 
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    checkUserInput();
-  }
-});
-
-
 // Roman numeral conversion
 let roman = [];
 
@@ -67,3 +57,13 @@ const getRomanNum = (input) => {
   
   roman = [];  
 };
+
+
+  // Listening for button click or keydown to check user input
+  convertBtn.addEventListener("click", checkUserInput);
+ 
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      checkUserInput();
+    }
+  });
