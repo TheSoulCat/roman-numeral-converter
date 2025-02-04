@@ -65,5 +65,6 @@ const getRomanNum = (input) => {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       checkUserInput();
+      e.preventDefault()
     }
   });
